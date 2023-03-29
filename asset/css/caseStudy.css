@@ -1,0 +1,90 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    background-image: linear-gradient(0, rgb(187 187 187 / 28%),rgba(46, 48, 48, 0.6)),
+    url("../img/login-register/20211031_180017.jpg");
+    background-size: contain
+}
+
+.formLogin  {
+    display: block;
+    margin: 15px 0;
+    width: 500px;
+    height: 180px;
+    background-color: rgba(219, 219, 236, 0.45);
+    padding: 20px;
+    border-radius: 10px;
+}
+.formRegister {
+    display: block;
+    margin: 120px 0;
+    width: 500px;
+    height: 288px;
+    background-color: rgba(219, 219, 236, 0.45);
+    padding: 20px;
+    border-radius: 10px;
+}
+.input {
+    display: block;
+    justify-content: center;
+    margin: 30px;
+
+}
+.input-1 , .input-2 {
+    display: flex;
+    justify-content: center;
+    margin: 15px 10px;
+
+}
+.input-1 input {
+    border-radius: 5px;
+    background-color: lightgrey;
+    margin-left: 5px;
+}
+
+.input-1 input:focus-visible {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.idcss{
+    padding-left: 54px;
+}
+.phonecss {
+    padding-right: 28px;
+}
+.emailcss {
+    padding-left: 26px;
+}
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+
+}
+.btn button{
+    margin-left: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #d61b06;
+    background-color: #1d341d;
+}
+.btn button:hover{
+    background-color: #9797ce;
+    color: white;
+}.btn button:hover:first-child{
+     background-color: #12bd12;
+ }
+
+.close {
+    display: none;
+}
+.open {
+    display: block;
+}

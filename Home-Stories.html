@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stories</title>
+    <link rel="stylesheet" href="asset/css/home.css">
+    <link rel="stylesheet" href="./asset/font/themify-icons/themify-icons.css">
+    <link rel="icon" href="./asset/favicon/favicon-new.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="web ">
+    <header class="header">
+        <nav class="header__navbar">
+            <div class="header__navbar-logo">
+                <a class="header__navbar-logo-link" href="caseStudy-Home.html">
+                    <div class="header__navbar-logo-img"><img class="logo" src="./asset/img/logo/RucksackLogo.png">
+                    </div>
+                </a>
+            </div>
+
+            <div class="header__navbar-search">
+                <input class="search_input" type="text" placeholder="Search">
+                <div class="search_input__btn">
+                    <div class="search_btn">
+                            <span class="search_btn-icon">
+                                <i class="ti-search"></i>
+                            </span>
+                        <span class="search_btn-text">Search</span>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="header__navbar-list">
+                <li class="header__navbar-item"><a href="Home-About.html">About</a></li>
+                <li class="header__navbar-item"><a href="caseStudy-Home.html">Shop</a></li>
+                <li class="header__navbar-item"><a href="Home-Stockists.html">Stockists</a></li>
+                <li class="header__navbar-item"><a href="Home-Stories.html">Stories</a></li>
+                <button style="border: none; background:none" type="button" class="header__navbar-item "
+                        onclick="navigationToLogin()"><i class="ti-user"></i></button>
+                <button style="border: none; background:none" type="button" class="header__navbar-item btnCart-js "><i
+                        class="ti-shopping-cart"></i></button>
+                <button style="border: none; background:none" type="button" class="header__navbar-item btnOpen-js"><i
+                        class="ti-pencil-alt"></i></button>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="editTable openTable-js close">
+        <div class="table__changing ">
+            <button class="closeTable btnClose-js">
+                <i class="ti-close"></i>
+            </button>
+            <div class="table__input">
+                <h2>Edit content:</h2>
+                <input id="inputImg" type="text" placeholder="Enter photo here...">
+                <input id="inputName" type="text" placeholder="Enter product name here...">
+                <input id="inputPrice" type="text" placeholder="Enter product price here...">
+                <div class="table__btn">
+                    <button type="button" onclick="addProduct()">AddProduct</button>
+                    <button type="button" onclick="editProduct2()">UpdateProduct</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart cart-js close">
+        <div class="close-cart"><i class="ti-close close-js"></i></div>
+        <div id="cart__inner"></div>
+    </div>
+    <div class="container ">
+        <div class="main-nav__Stories">
+            <!-- main-nav__blog-list-1 -->
+            <div class="main-nav__blog-list-page1">
+                <div class="blog-list__container">
+                    <a href="" class="blog-list__link">
+                        <img class="blog-list__link-img" src="./asset/img/itemstory/story1.jpg" alt="">
+                        <h3 class="blog-list__link-title">Expedition Photography with Nick Bondarev</h3>
+                        <div class="blog-list__link-type">
+                            <span>Interview</span>
+                            <span>Nick Bondarev</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog-list__container">
+                    <a href="" class="blog-list__link">
+                        <img class="blog-list__link-img" src="././asset/img/itemstory/story2.jpg" alt="">
+                        <h3 class="blog-list__link-title">The Abandoned Poolv</h3>
+                        <div class="blog-list__link-type">
+                            <span>Photo Essay</span>
+                            <span>Melody Joy</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog-list__container">
+                    <a href="" class="blog-list__link">
+                        <img class="blog-list__link-img" src="./asset/img/itemstory/story3.jpg" alt="">
+                        <h3 class="blog-list__link-title">Timeless</h3>
+                        <div class="blog-list__link-type">
+                            <span>Photo Essay</span>
+                            <span>Frederique Peckelsen</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog-list__container">
+                    <a href="" class="blog-list__link">
+                        <img class="blog-list__link-img" src="./asset/img/itemstory/story4.jpg" alt="">
+                        <h3 class="blog-list__link-title">Breaking Down</h3>
+                        <div class="blog-list__link-type">
+                            <span>Fiction</span>
+                            <span>Laura Pendlebury</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog-list__container">
+                    <a href="" class="blog-list__link">
+                        <img class="blog-list__link-img" src="./asset/img/itemstory/story5.jpg" alt="">
+                        <h3 class="blog-list__link-title">The Edges of These Isles</h3>
+                        <div class="blog-list__link-type">
+                            <span>Photo Essay</span>
+                            <span>Simon Bray</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog-list__container">
+                    <a href="" class="blog-list__link">
+                        <img class="blog-list__link-img" src="./asset/img/itemstory/story6.jpg" alt="">
+                        <h3 class="blog-list__link-title">Arriving in Mestia</h3>
+                        <div class="blog-list__link-type">
+                            <span>Travel Story</span>
+                            <span>Hugh Collins</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog-list__container">
+                    <a href="" class="blog-list__link">
+                        <img class="blog-list__link-img" src="./asset/img/itemstory/story7.jpg" alt="">
+                        <h3 class="blog-list__link-title">Canyon</h3>
+                        <div class="blog-list__link-type">
+                            <span>Travel Story</span>
+                            <span>Mirko Nicholson</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog-list__container">
+                    <a href="" class="blog-list__link">
+                        <img class="blog-list__link-img" src="./asset/img/itemstory/story8.jpg" alt="">
+                        <h3 class="blog-list__link-title">Marfa</h3>
+                        <div class="blog-list__link-type">
+                            <span>Travel Story</span>
+                            <span>Laura Pendlebury</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog-list__container">
+                    <a href="" class="blog-list__link">
+                        <img class="blog-list__link-img" src="./asset/img/itemstory/story9.jpg" alt="">
+                        <h3 class="blog-list__link-title">A Journey through Tara</h3>
+                        <div class="blog-list__link-type">
+                            <span>Photo Essay</span>
+                            <span>Filip Zrnzevic</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog-list__container">
+                    <a href="" class="blog-list__link">
+                        <img class="blog-list__link-img" src="./asset/img/itemstory/story10.jpg" alt="">
+                        <h3 class="blog-list__link-title">A Journey Home</h3>
+                        <div class="blog-list__link-type">
+                            <span>Photo Essay</span>
+                            <span>Morgane Erpicum</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog-list__container">
+                    <a href="" class="blog-list__link">
+                        <img class="blog-list__link-img" src="./asset/img/itemstory/story11.jpg" alt="">
+                        <h3 class="blog-list__link-title">The Beauty of Darkness</h3>
+                        <div class="blog-list__link-type">
+                            <span>Story</span>
+                            <span>Azzymah Zain</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog-list__container">
+                    <a href="" class="blog-list__link">
+                        <img class="blog-list__link-img" src="./asset/img/itemstory/story12.jpg" alt="">
+                        <h3 class="blog-list__link-title">Antarctic Exploration with John Bozinov</h3>
+                        <div class="blog-list__link-type">
+                            <span>Interview</span>
+                            <span>John Bozinov</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog-list__container">
+                    <a href="" class="blog-list__link">
+                        <img class="blog-list__link-img" src="./asset/img/itemstory/story13.jpg" alt="">
+                        <h3 class="blog-list__link-title">Sailing in Greenland</h3>
+                        <div class="blog-list__link-type">
+                            <span>Photo Essay</span>
+                            <span>Nick Bondarev</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog-list__container">
+                    <a href="" class="blog-list__link">
+                        <img class="blog-list__link-img" src="./asset/img/itemstory/story14.jpg" alt="">
+                        <h3 class="blog-list__link-title">Glenfinnan</h3>
+                        <div class="blog-list__link-type">
+                            <span>Photo Essay</span>
+                            <span>Mirko Nicholson</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog-list__container">
+                    <a href="" class="blog-list__link">
+                        <img class="blog-list__link-img" src="./asset/img/itemstory/story15.jpg" alt="">
+                        <h3 class="blog-list__link-title">Chasing Shadows</h3>
+                        <div class="blog-list__link-type">
+                            <span>Travel Story</span>
+                            <span>Megan Perra</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog-list__container">
+                    <a href="" class="blog-list__link">
+                        <img class="blog-list__link-img" src="./asset/img/itemstory/story16.jpg" alt="">
+                        <h3 class="blog-list__link-title">A Conversation With Senja</h3>
+                        <div class="blog-list__link-type">
+                            <span>Visual Story</span>
+                            <span>Raynor Czerwinski</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog-list__container">
+                    <a href="" class="blog-list__link">
+                        <img class="blog-list__link-img" src="./asset/img/itemstory/story17.jpg" alt="">
+                        <h3 class="blog-list__link-title">Apuan Alps</h3>
+                        <div class="blog-list__link-type">
+                            <span>Photo Essay</span>
+                            <span>Filippo Maffei</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog-list__container">
+                    <a href="" class="blog-list__link">
+                        <img class="blog-list__link-img" src="./asset/img/itemstory/story18.jpg" alt="">
+                        <h3 class="blog-list__link-title">Salt</h3>
+                        <div class="blog-list__link-type">
+                            <span>Photo Essay</span>
+                            <span>Peter Franc</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog-list__container">
+                    <a href="" class="blog-list__link">
+                        <img class="blog-list__link-img" src="./asset/img/itemstory/story19.jpg" alt="">
+                        <h3 class="blog-list__link-title">Went West</h3>
+                        <div class="blog-list__link-type">
+                            <span>Photo Essay</span>
+                            <span>Adrian Otero
+                      </span>
+                        </div>
+                    </a>
+                </div>
+                <nav class="main-nav__blog-list-pagination">
+                    <a href="#blog" >
+                        <i class="blog-list-pagination blog-list-pagination1 fas fa-chevron-right"></i>
+                    </a>
+                </nav>
+            </div>
+    </div>
+
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="footer__footer-inner">
+            <div class="footer__footer-inner__main1">
+                <div class="about-a">
+                    <a class="footer-nav" href="#">Contact</a>
+                    <a class="footer-nav" href="#">Submissions</a>
+                    <a class="footer-nav" href="#">Images</a>
+                    <a class="footer-nav" href="#">FAQs</a>
+                </div>
+            </div>
+            <div class="footer__footer-inner__main2">
+                <a href="https://www.instagram.com/thainguyenn_/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/search?q=rucksackmag&src=typed_query"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.pinterest.com/nvt689/"><i class="fab fa-pinterest-p"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100012462404681"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <p>© 2023 Rucksack Magazine Ltd. cover-by:Thái Nguyễn </p>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+  <script src="asset/js/home.js"></script>
+  <script src="asset/js/account.js"></script>
+  <script src="asset/js/login&Register.js"></script>
+</html>

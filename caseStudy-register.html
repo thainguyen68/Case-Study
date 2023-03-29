@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="asset/css/caseStudy.css">
+    <link rel="icon" href="./asset/favicon/favicon-new.png">
+
+    <style>
+        body{
+            /*display: flex;*/
+            /*justify-content: center;*/
+            margin-top: 50px;
+            background-image: linear-gradient(0, rgb(187 187 187 / 28%),rgba(46, 48, 48, 0.6)),
+            url("./asset/img/login-register/20211031_180017.jpg");
+            background-size: cover;
+            background-repeat:no-repeat ;
+        }
+    </style>
+</head>
+<body>
+<div class="formRegister">
+    <div><h2 style="text-align: center">Please create an account here!</h2></div>
+
+    <div class="input-1 idcss">
+        <label for="inputpss0"><span>Id: </span></label>
+        <input type="text" placeholder="Enter id here" id="inputpss0">
+    </div>
+
+    <div class="input-1">
+        <label for="inputacc1"><span>User name: </span></label>
+        <input type="text" placeholder="Enter your account here" id="inputacc1">
+    </div>
+
+    <div class="input-1">
+        <label for="inputpss2"><span>Pass word: </span></label>
+        <input type="password" placeholder="Enter password here" id="inputpss2">
+    </div>
+
+    <div class="input-1 phonecss ">
+        <label for="inputpss3"><span>Phone number: </span></label>
+        <input type="text" placeholder="Enter phone number here" id="inputpss3">
+    </div>
+
+    <div class="input-1 emailcss">
+        <label for="inputpss4"><span>Email: </span></label>
+        <input type="text" placeholder="Enter email here" id="inputpss4">
+    </div>
+
+
+
+
+    <div class="btn">
+        <button type="button" onclick="navigationToLogin()"> Log in</button>
+        <button class="btnRegister" type="button" onclick="registerAccount()"> Register</button>
+    </div>
+</div>
+</body>
+<!--<script src="asset/js/home.js"></script>-->
+<script src="asset/js/account.js"></script>
+<script src="asset/js/login&Register.js"></script>
+</html>

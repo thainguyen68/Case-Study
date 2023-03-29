@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stockists</title>
+    <link rel="stylesheet" href="asset/css/home.css">
+    <link rel="stylesheet" href="./asset/font/themify-icons/themify-icons.css">
+    <link rel="icon" href="./asset/favicon/favicon-new.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        .main-nav__Stockists {
+            display: block;
+        }
+        .main-nav__stockists-inner {
+            display: flex;
+            justify-content: flex-start;
+        }
+        .stockists-inner {
+            flex: 1;
+            padding: 0 17px 17px 0;
+        }
+        .main-nav__Stockists h1 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            font-style: normal;
+            line-height: 45px;
+            letter-spacing: 0;
+            text-transform: none;
+            padding: 0 25px;
+        }
+        .main-nav__Stockists h2 {
+            font-size: 16px;
+            font-weight: 500;
+            color: #925c0c;
+            margin: 15px 0 13px 0;
+            line-height: 28px;
+            font-style: normal;
+            text-transform: none;
+            letter-spacing: 0;
+            padding: 0 25px;
+        }
+        .main-nav__Stockists p {
+            font-size: 16px;
+            font-weight: 400;
+            margin: 16px 0 16px 0;
+            line-height: 25px;
+            color: var(--text-color);
+            padding: 0 25px;
+        }
+        .stockists-inner a{
+            border-bottom: 1px solid rgba(0,0,0,.234);
+            color: var(--text-color);
+            text-decoration: none;
+            transition: border-color .15s ease-out,color .15s ease-out
+        }
+        .stockists-inner a:hover{
+            color: rgba(0,0,0,.468);
+            border-color: rgba(0,0,0,.117);
+        }
+    </style>
+</head>
+<body>
+<div class="web ">
+    <header class="header">
+        <nav class="header__navbar">
+            <div class="header__navbar-logo">
+                <a class="header__navbar-logo-link" href="caseStudy-Home.html">
+                    <div class="header__navbar-logo-img"><img class="logo" src="./asset/img/logo/RucksackLogo.png">
+                    </div>
+                </a>
+            </div>
+
+            <div class="header__navbar-search">
+                <input class="search_input" type="text" placeholder="Search">
+                <div class="search_input__btn">
+                    <div class="search_btn">
+                            <span class="search_btn-icon">
+                                <i class="ti-search"></i>
+                            </span>
+                        <span class="search_btn-text">Search</span>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="header__navbar-list">
+                <li class="header__navbar-item"><a href="Home-About.html">About</a></li>
+                <li class="header__navbar-item"><a href="caseStudy-Home.html">Shop</a></li>
+                <li class="header__navbar-item"><a href="Home-Stockists.html">Stockists</a></li>
+                <li class="header__navbar-item"><a href="Home-Stories.html">Stories</a></li>
+                <button style="border: none; background:none" type="button" class="header__navbar-item "
+                        onclick="navigationToLogin()"><i class="ti-user"></i></button>
+                <button style="border: none; background:none" type="button" class="header__navbar-item btnCart-js "><i
+                        class="ti-shopping-cart"></i></button>
+                <button style="border: none; background:none" type="button" class="header__navbar-item btnOpen-js"><i
+                        class="ti-pencil-alt"></i></button>
+                <button style="border: none; background:none" type="button" class="header__navbar-item btnOpen-js"><i
+                        class="ti-close"></i></button>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="editTable openTable-js close">
+        <div class="table__changing ">
+            <button class="closeTable btnClose-js">
+                <i class="ti-close"></i>
+            </button>
+            <div class="table__input">
+                <h2>Edit content:</h2>
+                <input id="inputImg" type="text" placeholder="Enter photo here...">
+                <input id="inputName" type="text" placeholder="Enter product name here...">
+                <input id="inputPrice" type="text" placeholder="Enter product price here...">
+                <div class="table__btn">
+                    <button type="button" onclick="addProduct()">AddProduct</button>
+                    <button type="button" onclick="editProduct2()">UpdateProduct</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart cart-js close">
+        <div class="close-cart"><i class="ti-close close-js"></i></div>
+        <div id="cart__inner"></div>
+    </div>
+    <div class="container ">
+        <div class="main-nav__Stockists ">
+            <div class="main-nav__stockists-inner">
+                <div class="stockists-inner">
+                    <div class="stockists-inner1">
+                        <h1>UK</h1>
+                        <h2>United Kingdom</h2>
+                        <p> <a href="">Alfies Studio</a>, Marsden <br>
+                            <a href="">Artwords</a>, London <br>
+                            Barbican News, London <br>
+                            Bonds, Coal Drops Yard, London <br>
+                            <a href="">Botanical Atelier</a>, Falmouth <br>
+                            Camden News, London <br>
+                            <a href="">Century General Store</a>, Edinburgh <br>
+                            <a href="">Charlotte Street News</a>, London <br>
+                            Compton News, London <br>
+                            Diptesh, London <br>
+                            <a href="">Earl Of East London</a>, London <br>
+                            <a href="">Fortnum & Mason</a>, London <br>
+                            <a href="">Foyles</a>, London <br>
+                            Fulham News, London
+                            Gill News, London
+                            Good News, London
+                            <a href="">Heart Gallery</a>, Hebden Bridge <br>
+                            <a href="">Ideas on Paper</a>, Nottingham <br>
+                            Jacks, London <br>
+                            <a href="">La Biblioteka</a>, Sheffield <br>
+                            <a href="">MagCulture</a>, London <br>
+                            <a href="">Magalleria</a>, Bath <br>
+                            <a href=""> Magazine Brighton</a>, Brighton <br>
+                            <a href="">Magma</a>, London & Manchester <br>
+                            New on the Wharf, London <br>
+                            <a href="">No Guts No Glory</a>, Exeter <br>
+                            <a href="">Òr</a>, Isle of Skye <br>
+                            <a href="">Paper Smiths</a>, Brighton, Bristol & London <br>
+                            Patkins, London <br>
+                            Portland Express, London <br>
+                            Rainbow News, London <br>
+                            <a href="">Rare Mags</a>, Stockport <br>
+                            Regent News, London <br>
+                            Rococo, London <br>
+                            <a href="">Shreeji Newsagents</a>, London <br>
+                            <a href="">The Hambledon</a>, Winchester <br>
+                            Thrive News, Westfield Centre <br>
+                            <a href="">Unique Magazines</a>, Newcastle Upon Tyne <br>
+                            Village Bookstore, Leeds <br>
+                            Waterstones, London (Gower Street) <br>
+                            <a href="">WeLovePrint</a>, Spitalfields Market London</p>
+                        <h2>UK Online Only</h2>
+                        <p>
+                            <a href="">Millican</a> <br>
+                            <a href="">My Mag Shop</a> <br>
+                            <a href="">Newsstand</a> <br>
+                            <a href="">The Future Kept</a> <br>
+                            <a href="">Wood & Meadow</a>
+                        </p>
+                    </div>
+                    <div class="stockists-inner2">
+                        <h1>USA</h1>
+                        <h2>United States</h2>
+                        <p>Alexander Book Co, San Francisco, CA <br>
+                            Assembly Hall, Seattle, WA <br>
+                            Bert's Red Apple Market, Seattle, WA <br>
+                            Book & Game Co, Walla Walla, WA <br>
+                            Bookshop West Portal, San Francisco, CA<br>
+                            Bulldog News, Seattle, WA<br>
+                            Cafe Presse, Seattle, WA<br>
+                            <a href="">Commonplace Books</a>, Oklahoma City, OK<br>
+                            Edmonds Bookshop, Edmonds, WA<br>
+                            Fact & Fiction, Missoula, MT<br>
+                            First & Pike News, Seattle, WA<br>
+                            Food Co-op, Port Townsend, WA<br>
+                            Green Apple Books, San Francisco, CA<br>
+                            Griffin Bay Bookstore, Friday Harbor, WA<br>
+                            Heath Newsstand, San Francisco, CA<br>
+                            <a href="">Import News</a>, Los Angeles, New York & San Francisco<br>
+                            Island Books, Mercer Island, WA<br>
+                            <a href="">Indent</a>, Portland, OR<br>
+                            Issues, Oakland, CA<br>
+                            Ken's Market-Queen Anne, Seattle, WA<br>
+                            Magnolia's Bookstore, Seattle, WA<br>
+                            <a href="">Powell's Books</a>, Portland & Beaverton, OR<br>
+                            Queen Anne Book Company, Seattle, WA<br>
+                            Ravenna Third Place, Seattle, WA<br>
+                            River City Books, Soldotna, AK<br>
+                            Secret Garden, Seattle, WA<br>
+                            Third Place Books, Lake Forest Park & Seward Park, WA<br>
+                            U Bookstore, Mill Creek & Seattle, WA<br>
+                            Village Books-Bellingham, Bellingham, WA</p>
+                    </div>
+                </div>
+                <div class="stockists-inner">
+                    <div class="stockists-inner3">
+                        <h1>Worldwide</h1>
+                        <h2>Canada</h2>
+                        <p><a href="">The Gifted Type</a>, Ottawa <br>
+                            Wolfe Co. Apparel, Ontario</p>
+                        <h2>France</h2>
+                        <p><a href="">Wasted Talent</a>, Soorts Hossegor</p>
+                        <h2>Germany</h2>
+                        <p><a href="">Coffee Table Mags</a>, Hamburg
+                            <a href="">Rosa Wolf</a>, Berlin</p>
+                        <h2>Hong Kong</h2>
+                        <p><a href="">Kubrick Bookstore & Cafe</a>, Hong Kong</p>
+                        <h2>Italy</h2>
+                        <p><a href="">Frabs Magazines & More</a>
+                            <a href="">Shangri-La-Heritage</a>, Province of Bergamo</p>
+                        <h2>Japan</h2>
+                        <p>Daikanyama Tsutaya Books, Tokyo</p>
+                        <h2>Netherlands</h2>
+                        <p><a href="">Athenaeum Nieuwscentrum</a>, Amsterdam</p>
+                        <h2>New Zealand </h2>
+                        <p><a href="">Mag Nation</a>, Auckland</p>
+                        <h2>Portugal</h2>
+                        <p><a href="">Hello Kristof</a>, Lisbon <br>
+                            <a href="">Under the Cover</a>, Lisbon <br>
+                            <a href="">Manifesto</a>, Mercado Matosinhos <br>(Porto)</p>
+                        <h2>Singapore</h2>
+                        <p><a href="">Basheer Graphics</a>, Singapore</p>
+                        <h2>South Korea</h2>
+                        <p><a href="">World Mags</a></p>
+                        <h2>Sweden</h2>
+                        <p><a href="">Papercut</a>, Stockholm</p>
+                        <h2>Switzerland</h2>
+                        <p><a href="">Lorem (not ipsum)</a>, Zurich <br>
+                            <a href="">Print Matters</a>, Zurich</p>
+                        <h2>Taiwan</h2>
+                        <p><a href="">Multi-Arts</a>, Taipei</p>
+                    </div>
+                    <div class="stockists-inner4">
+                        <h1>Elements (Book)</h1>
+                        <h2>Elements: In Pursuit of the Wild</h2>
+                        <p><a href="">Amazon</a> (Worldwide) <br>
+                            <a href="">Alta Via Travel Bookshop</a> (Belgium)<br>
+                            <a href=""> Barnes & Noble</a> (USA)<br>
+                            <a href="">Blackwell’s</a> (UK)<br>
+                            <a href="">Book Depository</a> (UK)<br>
+                            <a href="">Booktopia </a>(Australia)<br>
+                            <a href="">Browns Books</a> (UK)<br>
+                            <a href="">Copyright Bookshop</a> (Belgium)<br>
+                            <a href="">Foyles</a> (UK)<br>
+                            <a href="">Furet Du Nord</a> (France)<br>
+                            <a href="">IBS</a> (Italy)<br>
+                            <a href="">Indigo</a> (Canada)<br>
+                            <a href="">Lannoo</a> (Belgium)<br>
+                            <a href="">My Mag Shop</a> (UK)<br>
+                            <a href="">Shreeji Newsagents</a> (UK)<br>
+                            <a href="">Summerfield Books</a> (UK)<br>
+                            <a href="">Tales</a> (UK)<br>
+                            <a href="">Up North</a> (Belgium)<br>
+                            <a href="">Waterstones</a> (UK)<br>
+                            <a href="">WHSmiths</a> (UK)<br>
+                            <a href="">William Dam</a> (Denmark)<br>
+                            <a href="">Wordery</a> (UK)</p><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="footer__footer-inner">
+            <div class="footer__footer-inner__main1">
+                <div class="about-a">
+                    <a class="footer-nav" href="#">Contact</a>
+                    <a class="footer-nav" href="#">Submissions</a>
+                    <a class="footer-nav" href="#">Images</a>
+                    <a class="footer-nav" href="#">FAQs</a>
+                </div>
+            </div>
+            <div class="footer__footer-inner__main2">
+                <a href="https://www.instagram.com/thainguyenn_/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/search?q=rucksackmag&src=typed_query"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.pinterest.com/nvt689/"><i class="fab fa-pinterest-p"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100012462404681"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <p>© 2023 Rucksack Magazine Ltd. cover-by:Thái Nguyễn </p>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+  <script src="asset/js/home.js"></script>
+  <script src="asset/js/account.js"></script>
+  <script src="asset/js/login&Register.js"></script>
+</html>

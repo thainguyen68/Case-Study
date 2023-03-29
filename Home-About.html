@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="asset/css/home.css">
+    <link rel="stylesheet" href="./asset/font/themify-icons/themify-icons.css">
+    <link rel="icon" href="./asset/favicon/favicon-new.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        .main-nav__About {
+            display: flex;
+            justify-content: center;
+        }
+        .nav-about {
+            width: 450px;
+            height: 500px;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="web ">
+    <header class="header">
+        <nav class="header__navbar">
+            <div class="header__navbar-logo">
+                <a class="header__navbar-logo-link" href="caseStudy-Home.html">
+                    <div class="header__navbar-logo-img"><img class="logo" src="./asset/img/logo/RucksackLogo.png">
+                    </div>
+                </a>
+            </div>
+
+            <div class="header__navbar-search">
+                <input class="search_input" type="text" placeholder="Search">
+                <div class="search_input__btn">
+                    <div class="search_btn">
+                            <span class="search_btn-icon">
+                                <i class="ti-search"></i>
+                            </span>
+                        <span class="search_btn-text">Search</span>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="header__navbar-list">
+                <li class="header__navbar-item"><a href="Home-About.html">About</a></li>
+                <li class="header__navbar-item"><a href="caseStudy-Home.html">Shop</a></li>
+                <li class="header__navbar-item"><a href="Home-Stockists.html">Stockists</a></li>
+                <li class="header__navbar-item"><a href="Home-Stories.html">Stories</a></li>
+                <button style="border: none; background:none" type="button" class="header__navbar-item "
+                        onclick="navigationToLogin()"><i class="ti-user"></i></button>
+                <button style="border: none; background:none" type="button" class="header__navbar-item btnCart-js "><i
+                        class="ti-shopping-cart"></i></button>
+                <button style="border: none; background:none" type="button" class="header__navbar-item btnOpen-js"><i
+                        class="ti-pencil-alt"></i></button>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="editTable openTable-js close">
+        <div class="table__changing ">
+            <button class="closeTable btnClose-js">
+                <i class="ti-close"></i>
+            </button>
+            <div class="table__input">
+                <h2>Edit content:</h2>
+                <input id="inputImg" type="text" placeholder="Enter photo here...">
+                <input id="inputName" type="text" placeholder="Enter product name here...">
+                <input id="inputPrice" type="text" placeholder="Enter product price here...">
+                <div class="table__btn">
+                    <button type="button" onclick="addProduct()">AddProduct</button>
+                    <button type="button" onclick="editProduct2()">UpdateProduct</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart cart-js close">
+        <div class="close-cart"><i class="ti-close close-js"></i></div>
+        <div id="cart__inner"></div>
+    </div>
+    <div class="container ">
+        <div class="box-text-about">  <p style="margin-bottom: 10px">Rucksack Magazine is a printed bi-annual photography and travel publication dedicated to storytelling. We began in 2016 as an online journal and have recently printed our eighth volume of the magazine called Coast. We have also recently published our first hardback book called Elements, made in partnership with Lannoo Publishers. Our magazines, books and zines feature photo essays, travel stories and fictional pieces exploring a particular theme for each issue. We work as a platform for new and emerging photographers and writers, connecting a global community of creative storytellers.</p> <div class="empty"></div> </div>
+        <div class="main-nav__About">
+            <img class="nav-about" src="./asset/img/itemAbout/item1.jpg" alt="">
+            <img class="nav-about" src="./asset/img/itemAbout/item2.jpg" alt="">
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="footer__footer-inner">
+            <div class="footer__footer-inner__main1">
+                <div class="about-a">
+                    <a class="footer-nav" href="#">Contact</a>
+                    <a class="footer-nav" href="#">Submissions</a>
+                    <a class="footer-nav" href="#">Images</a>
+                    <a class="footer-nav" href="#">FAQs</a>
+                </div>
+            </div>
+            <div class="footer__footer-inner__main2">
+                <a href="https://www.instagram.com/thainguyenn_/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/search?q=rucksackmag&src=typed_query"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.pinterest.com/nvt689/"><i class="fab fa-pinterest-p"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100012462404681"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <p>© 2023 Rucksack Magazine Ltd. cover-by:Thái Nguyễn </p>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+  <script src="asset/js/home.js"></script>
+  <script src="asset/js/account.js"></script>
+  <script src="asset/js/login&Register.js"></script>
+</html>
