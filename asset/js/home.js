@@ -35,11 +35,14 @@ class Product {
 }
 
 
+
+
 // let productAll = [];
 // let product = new Product('https://images.squarespace-cdn.com/content/v1/57c38730bebafb2d4a4f8861/1649778910557-332SXOIMMSON0LJDHOBK/Rucksack+Magazine+Volume+Nine+Cover.jpg?format=750w', 'Volume Eight: Coast (Gold Edition)', '12.00')
 // productAll.push(product)
 // let product1 = new Product('https://images.squarespace-cdn.com/content/v1/57c38730bebafb2d4a4f8861/1649778910557-332SXOIMMSON0LJDHOBK/Rucksack+Magazine+Volume+Nine+Cover.jpg?format=750w', 'Volume Eight: Coast (Gold Edition)', '12.00')
 // productAll.push(product1)
+// window.localStorage.setItem("productArr1", JSON.stringify(productAll)) // nối liên kết để lưu trên Storage
 let productAll = JSON.parse(window.localStorage.getItem("productArr1")); // nối liên kết để lưu trên Storage
 
 

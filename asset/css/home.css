@@ -245,7 +245,7 @@ ol ul {
     border-color: transparent transparent #dfe7e7e8 transparent;
     position: fixed;
     top: 45px;
-    right: 94px;
+    right: 184px;
 }
 
 .close-cart {
@@ -303,7 +303,7 @@ ol ul {
 }
 
 .list-magazine{
-    width: 260px;
+    width: 286px;
     padding-right: 30px;
     padding-bottom: 30px;
     display: flex;
