@@ -28,7 +28,7 @@ let checkAccSucces = JSON.parse(window.localStorage.getItem("checkAccSucces")); 
 
 
 function loginSuccess() {
-    // accountArr = JSON.parse(window.localStorage.getItem("accountArr1"));
+    accountArr = JSON.parse(window.localStorage.getItem("accountArr1"));
     let userName = document.getElementById("inputacc").value;
     let passWord = document.getElementById("inputpss").value;
     if (checkAccount(userName, passWord)) {
