@@ -33,7 +33,7 @@ function loginSuccess() {
     let passWord = document.getElementById("inputpss").value;
     if (checkAccount(userName, passWord)) {
         alert('Welcome to the website')
-        window.location.href = 'caseStudy-Home.html';
+        window.location.href = 'index.html';
         window.localStorage.setItem("checkAccSucces", true)// nối liên kết để lưu trên Storage
     } else {
         alert('The account or password is incorrect, please try again')
@@ -72,7 +72,7 @@ function registerAccount() {
 function logOut() {
 window.localStorage.setItem("checkAccSucces", false)// nối liên kết để lưu trên Storage
   if (confirm("Do you want to sign out?")){
-      window.location.href = 'caseStudy-Home.html';
+      window.location.href = 'index.html';
   }
 }
 

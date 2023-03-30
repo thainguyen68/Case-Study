@@ -40,13 +40,11 @@ class Product {
 // productAll.push(product)
 // let product1 = new Product('https://images.squarespace-cdn.com/content/v1/57c38730bebafb2d4a4f8861/1649778910557-332SXOIMMSON0LJDHOBK/Rucksack+Magazine+Volume+Nine+Cover.jpg?format=750w', 'Volume Eight: Coast (Gold Edition)', '12.00')
 // productAll.push(product1)
-
 let productAll = JSON.parse(window.localStorage.getItem("productArr1")); // nối liên kết để lưu trên Storage
 
 
 // hiển thị
 function displayAllProduct() {
-
     let data = "<table class='table'>";
         data+= "<tr class='tr'>";
     for (let i = 0; i < productAll.length; i++) {
@@ -72,6 +70,7 @@ function displayAllProduct() {
     data += "</tr>"
     data += "</table>"
     document.getElementById('mainProductHere').innerHTML = data;
+
 }
 
 
@@ -80,17 +79,14 @@ function addProduct() {
     let inputImg = document.getElementById("inputImg").value
     let inputName = document.getElementById("inputName").value
     let inputPrice = document.getElementById("inputPrice").value
-
     let productNew = new Product(inputImg, inputName, inputPrice);
     productAll.push(productNew)
     window.localStorage.setItem("productArr1", JSON.stringify(productAll)) // nối liên kết để lưu trên Storage
-
     displayAllProduct()
 }
 
 
 let demo;
-
 function editProduct(index) {
 
     let pro = productAll[index]
@@ -109,7 +105,6 @@ function editProduct2() {
     pro.name = document.getElementById("inputName").value
     pro.price = document.getElementById("inputPrice").value
     window.localStorage.setItem("productArr1", JSON.stringify(productAll)) // nối liên kết để lưu trên Storage
-
     displayAllProduct()
 }
 
@@ -119,7 +114,6 @@ function deleteProduct(index) {
     if (confirm(" Are you sure you want to delete the product " + productAll[index].name + " ?")) {
         productAll.splice(index, 1)
         window.localStorage.setItem("productArr1", JSON.stringify(productAll)) // nối liên kết để lưu trên Storage
-
         displayAllProduct()
     }
 }
