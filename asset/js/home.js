@@ -38,11 +38,37 @@ class Product {
 
 
 let productAll = [];
-let product = new Product('https://images.squarespace-cdn.com/content/v1/57c38730bebafb2d4a4f8861/1649778910557-332SXOIMMSON0LJDHOBK/Rucksack+Magazine+Volume+Nine+Cover.jpg?format=750w', 'Volume Eight: Coast (Gold Edition)', '12.00')
+let product = new Product('https://images.squarespace-cdn.com/content/v1/57c38730bebafb2d4a4f8861/1649778910557-332SXOIMMSON0LJDHOBK/Rucksack+Magazine+Volume+Nine+Cover.jpg?format=750w', 'Volume Nine', '12.00')
 productAll.push(product)
-let product1 = new Product('https://images.squarespace-cdn.com/content/v1/57c38730bebafb2d4a4f8861/1649778910557-332SXOIMMSON0LJDHOBK/Rucksack+Magazine+Volume+Nine+Cover.jpg?format=750w', 'Volume Eight: Coast (Gold Edition)', '12.00')
+let product1 = new Product('https://images.squarespace-cdn.com/content/v1/57c38730bebafb2d4a4f8861/1631892042884-IKJN435I6SXFXE9KHF7Z/Rucksack+Magazine+Vol+8+Gold+Cover.jpg?format=750w', 'Volume Eight: Coast (Gold Edition)', '30.00')
 productAll.push(product1)
+let product2 = new Product('https://images.squarespace-cdn.com/content/v1/57c38730bebafb2d4a4f8861/1631892541595-AL1V4LWUMQTYH9QCHVCW/Rucksack+Magazine+Vol+8+-+Pink+Cover.jpg?format=750w', 'Volume Eight: Coast (Pink Edition)', '28.00')
+productAll.push(product2)
+let product3 = new Product('https://images.squarespace-cdn.com/content/v1/57c38730bebafb2d4a4f8861/1664227683526-0QII5IGUQF3QI9Q2BAY4/Deserted+by+Rucksack+Magazine+-+Front+Cover.jpg?format=750w', 'Deserted: In Pursuit of', '16.00')
+productAll.push(product3)
+let product4 = new Product('https://images.squarespace-cdn.com/content/v1/57c38730bebafb2d4a4f8861/1607879705997-PHV1M7JVUT5SBDYZX43I/Rucksack+Magazine+Volume+Seven+Abandoned.jpg?format=750w', 'Volume Seven: Abandoned', '34.00')
+productAll.push(product4)
+let product5 = new Product('https://images.squarespace-cdn.com/content/v1/57c38730bebafb2d4a4f8861/1603982268736-W5Z8S1B2TSUKH64IDM1A/Elements+Cover+Image.jpg?format=750w', 'Elements: In Pursuit of the Wild', '40.00')
+productAll.push(product5)
+let product6 = new Product('https://images.squarespace-cdn.com/content/v1/57c38730bebafb2d4a4f8861/1587142102522-JG2WKH39J43RQ69VOW00/Rucksack+Magazine+-+Endless+Cover.jpg?format=750w', 'Volume Six: Endless', '30.00')
+productAll.push(product6)
+let product7 = new Product('https://images.squarespace-cdn.com/content/v1/57c38730bebafb2d4a4f8861/1573495934397-CXMSN6HXUZ4UU37VMNP2/The+City+Issue+Cover.jpg?format=750w', 'Volume Five: The City Issue', '19.00')
+productAll.push(product7)
+let product8 = new Product('https://images.squarespace-cdn.com/content/v1/57c38730bebafb2d4a4f8861/1554124096920-VUQJ03WL3XTLHQAT3WA4/Volume+Four+-+Cover.jpg?format=750w', 'Volume Four: The Pursuit Issue', '20.00')
+productAll.push(product8)
+let product9 = new Product('https://images.squarespace-cdn.com/content/v1/57c38730bebafb2d4a4f8861/1537810020406-EUETO3ICCZYXVJK9NIJ5/Rucksack+Magazine+Volume+3+-+The+Island+Issue.jpg?format=750w', 'Volume Three: The Island Issue', '18.00')
+productAll.push(product9)
+let product10 = new Product('https://images.squarespace-cdn.com/content/v1/57c38730bebafb2d4a4f8861/1588852502971-VG6P7TDKXG518MKO572V/Rucksack+Magazine+Presents+Isolation.jpg?format=750w', 'Isolation', '16.00')
+productAll.push(product10)
+let product11 = new Product('https://images.squarespace-cdn.com/content/v1/57c38730bebafb2d4a4f8861/1520268184426-0989EUCO8679H2PX6X2A/A+-+Volume+2+Cover.jpg?format=750w', 'Volume Two: The Journey Issue', '8.00')
+productAll.push(product11)
+let product12 = new Product('https://images.squarespace-cdn.com/content/v1/57c38730bebafb2d4a4f8861/1544371921515-V2WQKAVADB9LXYZ9Y2Y3/Volume+One+Cover.jpg?format=750w', 'Volume One: The Winter', '9.00')
+productAll.push(product12)
+
+
+
 window.localStorage.setItem("productArr1", JSON.stringify(productAll)) // nối liên kết để lưu trên Storage
+
 // let productAll = JSON.parse(window.localStorage.getItem("productArr1")); // nối liên kết để lưu trên Storage
 
 
